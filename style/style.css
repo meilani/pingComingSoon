@@ -45,5 +45,129 @@ For the social icons, you can use a font icon library. Some suggestions can be f
 
 */
 
+
+/**********
+GENERAL
+**********/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 35px;
+    color: #15202A;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+header,
+main,
+footer {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+/**********
+HEADER
+**********/
+
+header {
+    margin-bottom: 30px;
+
+}
+
+/**********
+MAIN
+**********/
+
+h1 {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+
+h1 strong {
+    font-weight: 700;
+}
+
+p {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.text {
+    margin-bottom: 32px;
+}
+
+.email-signup {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 72px;
+}
+
+input {
+    border-radius: 28px;
+    width: 100%;
+    padding: 12px 32px;
+    font-size: 12px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.email {
+    font-weight: 300;
+    margin-bottom: 10px;
+    border: 1px solid #C2D3FF;
+}
+
+.submit {
+    font-weight: 600;
+    border: none;
+    background-color: #4C7BF3;
+    color: #ffffff;
+}
+
+.image {
+    margin-bottom: 120px;
+    max-width: 640px;
+}
+
+/**********
+FOOTER
+**********/
+
+.social-icons {
+    margin-bottom: 30px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.copyright {
+    margin-bottom: 35px;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/**********
+MEDIA QUERIES
+**********/
