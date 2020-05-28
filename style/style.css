@@ -69,6 +69,7 @@ body {
     padding-top: 80px;
     padding-bottom: 35px;
     color: #15202A;
+    font-weight: 300;
 }
 
 img {
@@ -101,10 +102,12 @@ h1 {
     font-size: 22px;
     line-height: 32px;
     margin-bottom: 15px;
+    color: #969696;
 }
 
 h1 strong {
     font-weight: 700;
+    color: #15202A;
 }
 
 p {
@@ -163,6 +166,9 @@ FOOTER
 
 .copyright {
     margin-bottom: 35px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #969696;
 }
 
 .attribution { font-size: 11px; text-align: center; }
@@ -171,3 +177,47 @@ FOOTER
 /**********
 MEDIA QUERIES
 **********/
+
+@media (min-width: 850px) {
+    p {
+        font-size: 20px;
+    }
+
+    header {
+        margin-bottom: 40px;
+    }
+    .email-signup form {
+        display: flex;
+        flex-direction: row;
+    }
+
+    input {
+        padding: 18px 30px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    #email {
+        margin-bottom: 0;
+
+    }
+
+    #email::placeholder {
+        color: #B8C7ED;
+        font-weight: 300;
+    }
+
+    #submit {
+        max-width: 200px;
+        margin-left: 15px;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}
