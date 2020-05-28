@@ -217,6 +217,10 @@ MEDIA QUERIES
         line-height: 60px;
     }
 
+    .image {
+        margin-bottom: 72px;
+    }
+
     .copyright {
         font-size: 12px;
     }
