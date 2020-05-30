@@ -56,6 +56,11 @@ GENERAL
     box-sizing: border-box;
 }
 
+html {
+    visibility: visible;
+    opacity: 1;
+}
+
 body {
     font-family: 'Libre Franklin', sans-serif;
     display: flex;
@@ -96,6 +101,11 @@ header {
 /**********
 MAIN
 **********/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 h1 {
     font-weight: 300;
@@ -133,18 +143,53 @@ input {
     font-family: 'Libre Franklin', sans-serif;
 }
 
-.email {
+#email {
     font-weight: 300;
     margin-bottom: 10px;
     border: 1px solid #C2D3FF;
+    width: 281px;
 }
 
-.submit {
+
+#invalid-text,
+#valid-text {
+    display: none;
+    font-size: 10px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#invalid-text {
+    color: #FF5466;
+}
+
+#valid-text {
+    color: #2ECC71;
+}
+
+#submit {
     font-weight: 600;
     border: none;
     background-color: #4C7BF3;
     color: #ffffff;
+    max-height: 58px;
+    width: 281px;
+    box-shadow: 1px 5px 10px 1px hsl(223, 100%, 80%);
+    opacity: 1;
 }
+
+#submit:hover {
+    cursor: pointer;
+    background-color: hsl(223, 100%, 72%);
+}
+ 
+#submit:active {
+    box-shadow: none;
+    transform: translate(0, 5px); 
+} 
+
+
 
 .image {
     margin-bottom: 120px;
@@ -189,6 +234,7 @@ MEDIA QUERIES
     .email-signup form {
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     input {
@@ -199,7 +245,7 @@ MEDIA QUERIES
 
     #email {
         margin-bottom: 0;
-
+        width: 421px;
     }
 
     #email::placeholder {
@@ -207,14 +253,25 @@ MEDIA QUERIES
         font-weight: 300;
     }
 
+    #invalid-text,
+    #valid-text {
+        text-align: left;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
     #submit {
-        max-width: 200px;
+        width: 200px;
         margin-left: 15px;
     }
 
     h1 {
         font-size: 48px;
         line-height: 60px;
+    }
+
+    .image {
+        margin-bottom: 72px;
     }
 
     .copyright {

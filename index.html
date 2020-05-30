@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <style>html{visibility: hidden;opacity:0;}</style>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="./style/style.css">
-  <script src="./js/app.js" defer></script>
+  <script src="./js/app.js" async></script>
   
   <title>Frontend Mentor | Ping coming soon page</title>
 
@@ -25,7 +25,11 @@
         </div>
         <div class="email-signup">
             <form action="">
-                <input type="email" id="email" class="email" aria-label="email" placeholder="Your email address...">
+                <div>
+                    <input type="email" id="email" class="email" aria-label="email" placeholder="Your email address...">
+                    <p id="invalid-text">Please provide a valid email address</p>
+                    <p id="valid-text">Thank you for subscribing!</p>
+                </div>
                 <input type="submit" id="submit" class="submit" value="Notify Me" aria-label="submit">
             </form>
         </div>
